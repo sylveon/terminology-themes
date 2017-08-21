@@ -21,8 +21,8 @@
 
 #define BG_COLOR 31 31 31 255
 
-// No idea what this does, leave it like that for now
-#define BELL_OVERLAY_COLOR 220 220 220 32
+// Color that flashes over the screen when the bell rings
+#define BELL_OVERLAY_COLOR 190 63 72 32
 
 color_classes {
    color_class { name: "C0";  color: ANSI0; } // COL_BLACK
