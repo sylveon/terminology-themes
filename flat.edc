@@ -1603,7 +1603,6 @@ collections {
 
       group { name: "terminology/sel/item";
          images {
-           image: "bg_bevel.png" COMP;
            image: "pm_shadow.png" COMP;
            image: "cr_glow.png" COMP;
            image: "bg_led_base.png" COMP;
@@ -1720,18 +1719,6 @@ collections {
 
             ////////////////////////////////////////////////////////////////////
             // fancy stuff over the top of the terminal for shading and labelling
-            part { name: "bevel";
-               mouse_events: 0;
-               description { state: "default" 0.0;
-                  fixed: 1 1;
-                  rel1.to: "terminology.content";
-                  rel2.to: "terminology.content";
-                  image.normal: "bg_bevel.png";
-                  image.border: 3 3 5 3;
-                  image.middle: 0;
-                  fill.smooth: 0;
-               }
-            }
             part { name: "terminology.label"; type: TEXT; mouse_events: 0;
                scale: 1;
                description { state: "default" 0.0;
