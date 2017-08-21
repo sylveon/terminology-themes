@@ -4,7 +4,6 @@ collections {
    group { name: "terminology/background";
 
       images {
-        image: "bg_bevel.png" COMP;
         image: "bg_led_base.png" COMP;
         image: "bg_led.png" COMP;
         image: "bg_led_strobe.png" COMP;
@@ -1035,23 +1034,6 @@ collections {
                visible: 1;
             }
          }
-         part { name: "popmedia_bevel";
-            mouse_events: 0;
-            description { state: "default" 0.0;
-               fixed: 1 1;
-               rel1.to: "terminology.popmedia";
-               rel2.to: "terminology.popmedia";
-               image.normal: "bg_bevel.png";
-               image.border: 3 3 5 3;
-               image.middle: 0;
-               fill.smooth: 0;
-               visible: 0;
-            }
-            description { state: "visible" 0.0;
-               inherit: "default" 0.0;
-               visible: 1;
-            }
-         }
          part { name: "popmedia_dismiss"; type: RECT;
             mouse_events: 1;
             description { state: "default" 0.0;
@@ -1075,7 +1057,6 @@ collections {
             target: "popmedia_shadow";
             target: "popmedia_fill";
             target: "popmedia_overlay";
-            target: "popmedia_bevel";
             after: "popmedia_dismiss2";
          }
          program { name: "popmedia_dismiss2";
@@ -1092,7 +1073,6 @@ collections {
             target: "popmedia_shadow";
             target: "popmedia_fill";
             target: "popmedia_overlay";
-            target: "popmedia_bevel";
             after: "popmedia_dismiss2";
          }
          program { name: "popmedia_img";
@@ -1133,7 +1113,6 @@ collections {
             target: "popmedia_shadow";
             target: "popmedia_fill";
             target: "popmedia_overlay";
-            target: "popmedia_bevel";
          }
          program { name: "popmedia_scale2";
             signal: "popmedia,scale";
@@ -1145,7 +1124,6 @@ collections {
             target: "popmedia_shadow";
             target: "popmedia_fill";
             target: "popmedia_overlay";
-            target: "popmedia_bevel";
          }
          program { name: "popmedia_edje2";
             signal: "popmedia,edje";
@@ -1157,7 +1135,6 @@ collections {
             target: "popmedia_shadow";
             target: "popmedia_fill";
             target: "popmedia_overlay";
-            target: "popmedia_bevel";
          }
          program { name: "popmedia_mov2";
             signal: "popmedia,movie";
@@ -1169,7 +1146,6 @@ collections {
             target: "popmedia_shadow";
             target: "popmedia_fill";
             target: "popmedia_overlay";
-            target: "popmedia_bevel";
          }
 
          ////////////////////////////////////////////////////////////////////
