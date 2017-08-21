@@ -5,7 +5,6 @@ collections {
 
       images {
         image: "bg_bevel.png" COMP;
-        image: "bg_glint.png" COMP;
         image: "bg_led_base.png" COMP;
         image: "bg_led.png" COMP;
         image: "bg_led_strobe.png" COMP;
@@ -1053,42 +1052,6 @@ collections {
                visible: 1;
             }
          }
-         part { name: "popmedia_glintclip"; type: RECT;
-            mouse_events: 0;
-            description { state: "default" 0.0;
-               fixed: 1 1;
-               visible: 0;
-            }
-            description { state: "visible" 0.0;
-               inherit: "default" 0.0;
-               visible: 1;
-            }
-         }
-         part { name: "popmedia_glint";
-            mouse_events: 0;
-            clip_to: "popmedia_glintclip";
-            description { state: "default" 0.0;
-               fixed: 1 1;
-               min: 79 5;
-               max: 79 5;
-               rel1 {
-                  to: "terminology.popmedia";
-                  relative: 0.0 0.0;
-                  offset: 0 0;
-               }
-               rel2 {
-                  to: "terminology.popmedia";
-                  relative: 1.0 0.0;
-                  offset: -1 0;
-               }
-               image.normal: "bg_glint.png";
-               visible: 0;
-            }
-            description { state: "visible" 0.0;
-               inherit: "default" 0.0;
-               visible: 1;
-            }
-         }
          part { name: "popmedia_dismiss"; type: RECT;
             mouse_events: 1;
             description { state: "default" 0.0;
@@ -1113,8 +1076,6 @@ collections {
             target: "popmedia_fill";
             target: "popmedia_overlay";
             target: "popmedia_bevel";
-            target: "popmedia_glint";
-            target: "popmedia_glintclip";
             after: "popmedia_dismiss2";
          }
          program { name: "popmedia_dismiss2";
@@ -1132,8 +1093,6 @@ collections {
             target: "popmedia_fill";
             target: "popmedia_overlay";
             target: "popmedia_bevel";
-            target: "popmedia_glint";
-            target: "popmedia_glintclip";
             after: "popmedia_dismiss2";
          }
          program { name: "popmedia_img";
@@ -1175,8 +1134,6 @@ collections {
             target: "popmedia_fill";
             target: "popmedia_overlay";
             target: "popmedia_bevel";
-            target: "popmedia_glint";
-            target: "popmedia_glintclip";
          }
          program { name: "popmedia_scale2";
             signal: "popmedia,scale";
@@ -1189,8 +1146,6 @@ collections {
             target: "popmedia_fill";
             target: "popmedia_overlay";
             target: "popmedia_bevel";
-            target: "popmedia_glint";
-            target: "popmedia_glintclip";
          }
          program { name: "popmedia_edje2";
             signal: "popmedia,edje";
@@ -1203,8 +1158,6 @@ collections {
             target: "popmedia_fill";
             target: "popmedia_overlay";
             target: "popmedia_bevel";
-            target: "popmedia_glint";
-            target: "popmedia_glintclip";
          }
          program { name: "popmedia_mov2";
             signal: "popmedia,movie";
@@ -1217,8 +1170,6 @@ collections {
             target: "popmedia_fill";
             target: "popmedia_overlay";
             target: "popmedia_bevel";
-            target: "popmedia_glint";
-            target: "popmedia_glintclip";
          }
 
          ////////////////////////////////////////////////////////////////////
