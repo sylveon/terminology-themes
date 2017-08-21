@@ -263,7 +263,7 @@ collections {
                rel1.offset: -4 0;
                rel2.relative: 0.0 1.0;
                rel2.offset: -5 -1;
-               color: 255 153 51 64;
+               color: COL_DEF;
                align: 1.0 0.5;
                text { font: "Sans"; size: 8;
                   align: 1.0 0.5;
@@ -273,7 +273,7 @@ collections {
             }
             description { state: "over" 0.0;
                inherit: "default" 0.0;
-               color: COL_DEF;
+               color: ANSI7;
             }
          }
          part { name: "terminology.tabcount.label"; type: TEXT; mouse_events: 0;
