@@ -1801,7 +1801,7 @@ collections {
                rel1.offset: -6 0;
                rel1.relative: 0.0 1.0;
                rel2.offset: 5 0;
-               color: 100 200 255 255;
+               color: ANSI4;
                fill.smooth: 0;
             }
          }
