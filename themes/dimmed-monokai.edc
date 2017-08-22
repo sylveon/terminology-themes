@@ -31,7 +31,7 @@
 
 #define LINK ANSI4 // Color of the link underline
 
-#define MEDIA_BG ANSI15 // Background color of the popmedia
+#define MEDIA_BG BG_COLOR // Background color of the popmedia
 
 
 
