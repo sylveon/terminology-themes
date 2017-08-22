@@ -916,7 +916,7 @@ collections {
             description { state: "visible" 0.0;
                inherit: "default" 0.0;
                visible: 1;
-               color: ANSI1;
+               color: BELL;
             }
          }
          part { name: "bell_strobe";
@@ -937,7 +937,7 @@ collections {
             description { state: "spin" 0.0;
                inherit: "default" 0.0;
                visible: 1;
-               color: ANSI1;
+               color: BELL;
                map.rotation.z: 36.0;
             }
             description { state: "spin_done" 0.0;
