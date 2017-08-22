@@ -27,6 +27,10 @@
 
 #define CURSOR 185 188 186 // Cursor color
 
+#define LINK ANSI4 // Color of the link underline
+
+#define MEDIA_BG ANSI15 // Background color of the popmedia
+
 
 
 

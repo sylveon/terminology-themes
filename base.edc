@@ -1037,7 +1037,7 @@ collections {
                rel1.to: "terminology.popmedia";
                rel2.to: "terminology.popmedia";
                image.normal: "pm_fill.png";
-               color: ANSI8;
+               color: MEDIA_BG;
                fill {
                   size.relative: 0.0 0.0;
                   size.offset: 64 64;
@@ -1859,7 +1859,7 @@ collections {
                rel1.offset: -6 0;
                rel1.relative: 0.0 1.0;
                rel2.offset: 5 0;
-               color: ANSI4;
+               color: LINK;
                fill.smooth: 0;
             }
          }
