@@ -1,0 +1,11 @@
+language: none
+sudo: required
+
+install:
+  - sudo add-apt-repository -y ppa:niko2040/e19
+  - sudo apt-get -qq update
+  - sudo apt-get install -y efl
+
+script:
+  - make
+  - sudo make install
