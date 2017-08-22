@@ -1480,7 +1480,6 @@ collections {
    //// the cursor to show where text is typed
    group { name: "terminology/cursor";
       images {
-        image: "cr_key.png" COMP;
         image: "cr_out.png" COMP;
       }
       parts {
@@ -1488,7 +1487,7 @@ collections {
             description { state: "default" 0.0;
             }
             description { state: "pulse" 0.0;
-               color: 255 255 255 80;
+               color: CURSOR 80;
             }
          }
          part { name: "outline";
@@ -1499,11 +1498,11 @@ collections {
                   normal: "cr_out.png";
                   border: 3 3 3 3;
                }
-               color: 255 255 255 64;
+               color: CURSOR 64;
             }
             description { state: "focused" 0.0;
                inherit: "default" 0.0;
-               color: 255 255 255 255;
+               color: CURSOR 255;
             }
          }
          programs {

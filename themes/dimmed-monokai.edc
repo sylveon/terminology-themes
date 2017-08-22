@@ -1,5 +1,4 @@
-// Foreground color
-#define COL_DEF 185 188 186 255
+#define COL_DEF 185 188 186 255 // Foreground color
 
 #define ANSI0 58 61 67 255
 #define ANSI1 190 63 72 255
@@ -21,8 +20,14 @@
 
 #define BG_COLOR 31 31 31 255
 
-// Color that flashes over the screen when the bell rings
-#define BELL_OVERLAY_COLOR 190 63 72 100
+
+
+
+#define BELL_OVERLAY_COLOR 190 63 72 100 // Color flash when bell rings
+
+#define CURSOR 185 188 186 // Cursor color
+
+
 
 
 #include "../base.edc"
