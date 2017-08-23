@@ -1,0 +1,39 @@
+#define COL_DEF 238 238 236 255 // Foreground color
+
+#define ANSI0 46 52 54 255
+#define ANSI1 204 0 0 255
+#define ANSI2 78 154 6 255
+#define ANSI3 196 160 0 255
+#define ANSI4 52 101 164 255
+#define ANSI5 117 80 123 255
+#define ANSI6 6 152 154 255
+#define ANSI7 211 215 207 255
+
+#define ANSI8 85 87 83 255
+#define ANSI9 239 41 41 255
+#define ANSI10 138 226 52 255
+#define ANSI11 252 233 79 255
+#define ANSI12 114 159 207 255
+#define ANSI13 173 127 168 255
+#define ANSI14 52 226 226 255
+#define ANSI15 238 238 236 255
+
+#define BG_COLOR 48 10 36 255
+
+
+
+
+#define BELL ANSI1 // Color of the bell
+
+#define BELL_OVERLAY_COLOR 204 0 0 100 // Color flash when bell rings
+
+#define CURSOR 238 238 236 // Cursor color
+
+#define LINK ANSI4 // Color of the link underline
+
+#define MEDIA_BG BG_COLOR // Background color of the popmedia
+
+
+
+
+#include "../base.edc"
