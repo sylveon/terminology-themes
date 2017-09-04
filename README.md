@@ -1,6 +1,6 @@
 # Terminology Themes
 
-[![Build Status](https://travis-ci.org/charlesmilette/terminology-themes.svg?branch=master)](https://travis-ci.org/charlesmilette/terminology-themes)
+[![Build Status](https://travis-ci.org/sylveon/terminology-themes.svg?branch=master)](https://travis-ci.org/sylveon/terminology-themes)
 
 Color schemes for the best terminal emulator!
 
