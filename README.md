@@ -15,9 +15,9 @@ The tab appearance is a WIP. If anyone with better knowledge of EDC than me want
 
 ## Installation
 
-**Note**: A package might be available for your distro. Scroll down to the [packages section](#Packages) to find it out.
+**Note**: A package might be available for your distro. Scroll down to the [packages section](#packages) to find it out.
 
-First, you need to install the required componenents to build it:
+First, you need to install the required components to build it:
 
  - `edje_cc`
    - Ubuntu: `libefl-bin` from the [niko2040/e19](https://launchpad.net/~niko2040/+archive/ubuntu/e19) PPA
