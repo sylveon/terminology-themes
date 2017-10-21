@@ -18,5 +18,5 @@ clean:
 	rm themes/*.edj
 
 install: $(THEMES_BIN)
-	mkdir -p "$(PREFIX)/usr/share/terminology/themes"
-	install -Dm644 $^ "$(PREFIX)/usr/share/terminology/themes"
+	mkdir -p "$(DESTDIR)/usr/share/terminology/themes"
+	install -Dm644 $^ "$(DESTDIR)/usr/share/terminology/themes"
