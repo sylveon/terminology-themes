@@ -67,7 +67,7 @@ def main():
                      'Background color of the popmedia')
         print_lines(4)
 
-        print('#include "../base.edc"')
+        print('#include "../assets/base.edc"')
     else:
         raise ValueError("Invalid number of parameters passed")
 
