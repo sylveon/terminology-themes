@@ -27,7 +27,7 @@
 
 #define BELL_OVERLAY_COLOR 222 62 53 100 // Color flash when bell rings
 
-#define CURSOR 42 44 51 // Cursor color
+#define CURSOR 187 187 187 // Cursor color
 
 #define LINK ANSI4 // Color of the link underline
 
