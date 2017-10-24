@@ -1,6 +1,6 @@
 BASE=assets/base.edc
 
-THEMES_BIN=$(shell find themes -type f -name "*.edc" | sed s/.edc/.edj/g)
+THEMES_BIN=$(shell find themes -type f -name "*.edc" | sed "s/\(.edc\)\$$/.edj/g")
 
 ASSETS_DIR=assets
 
