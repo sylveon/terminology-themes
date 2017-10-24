@@ -1,9 +1,12 @@
 ASSETS_DIR=assets
 SOURCE_DIR=themes
 
-BASE=$(ASSETS_DIR)/base.edc
+SRC_EXT=edc
+OBJ_EXT=edj
 
-OBJS=$(patsubst %.edc, %.edj, $(wildcard $(SOURCE_DIR)/*.edc))
+BASE=$(ASSETS_DIR)/base.$(SRC_EXT)
+
+OBJS=$(patsubst %.$(SRC_EXT), %.$(OBJ_EXT), $(wildcard $(SOURCE_DIR)/*.$(SRC_EXT)))
 
 EDJE_CC=edje_cc
 EDJE_CC_IMG_FLAGS=-id $(ASSETS_DIR)
@@ -12,13 +15,14 @@ EDJE_CC_FLAGS=$(EDJE_CC_IMG_FLAGS) $(EDJE_CC_SND_FLAGS)
 
 .PHONY: all clean install
 
+
 all: $(OBJS)
 
-%.edj: %.edc $(BASE)
+%.$(OBJ_EXT): %.$(SRC_EXT) $(BASE)
 	$(EDJE_CC) $(EDJE_CC_FLAGS) $< $@
 
 clean:
-	rm $(SOURCE_DIR)/*.edj
+	rm $(SOURCE_DIR)/*.$(OBJ_EXT)
 
 install: $(OBJS)
 	mkdir -p "$(DESTDIR)/usr/share/terminology/themes"
