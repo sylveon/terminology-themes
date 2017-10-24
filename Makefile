@@ -1,26 +1,25 @@
-BASE=assets/base.edc
-
-OUT_DIR=out
 ASSETS_DIR=assets
+SOURCE_DIR=themes
 
-THEMES_BIN=$(shell find themes -type f -name "*.edc" | sed "s/\(.edc\)\$$/.edj/g" | sed "s/^\(themes\/\)/$(OUT_DIR)\//g")
+BASE=$(ASSETS_DIR)/base.edc
+
+OBJS=$(patsubst %.edc, %.edj, $(wildcard $(SOURCE_DIR)/*.edc))
 
 EDJE_CC=edje_cc
 EDJE_CC_IMG_FLAGS=-id $(ASSETS_DIR)
 EDJE_CC_SND_FLAGS=-sd $(ASSETS_DIR)
 EDJE_CC_FLAGS=$(EDJE_CC_IMG_FLAGS) $(EDJE_CC_SND_FLAGS)
 
-all: $(THEMES_BIN)
+.PHONY: all clean install
 
-$(THEMES_BIN): $(BASE) $(OUT_DIR)
-	$(EDJE_CC) $(EDJE_CC_FLAGS) $(subst out,themes,$(@:%.edj=%.edc)) $@
+all: $(OBJS)
 
-$(OUT_DIR):
-	mkdir $@
+%.edj: %.edc $(BASE)
+	$(EDJE_CC) $(EDJE_CC_FLAGS) $< $@
 
 clean:
 	rm themes/*.edj
 
-install: $(THEMES_BIN)
+install: $(OBJS)
 	mkdir -p "$(DESTDIR)/usr/share/terminology/themes"
 	install -Dm644 $^ "$(DESTDIR)/usr/share/terminology/themes"
