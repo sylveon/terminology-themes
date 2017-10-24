@@ -1,6 +1,6 @@
 BASE=assets/base.edc
 
-THEMES_BIN=$(shell find themes -type f -name "*.edc" | sed "s/\(.edc\)\$$/.edj/g")
+THEMES_BIN=$(shell find themes -type f -name "*.edc" | sed "s/\(.edc\)\$$/.edj/g" | sed "s/^\(themes\/\)/out\//g")
 
 ASSETS_DIR=assets
 
@@ -12,7 +12,7 @@ EDJE_CC_FLAGS=$(EDJE_CC_ADDITIONAL_FLAGS) $(EDJE_CC_IMG_FLAGS) $(EDJE_CC_SND_FLA
 all: $(THEMES_BIN)
 
 $(THEMES_BIN): $(BASE)
-	$(EDJE_CC) $(EDJE_CC_FLAGS) $(@:.edj=.edc)
+	$(EDJE_CC) $(EDJE_CC_FLAGS) $(subst out,themes,$(@:%.edj=%.edc)) $@
 
 clean:
 	rm themes/*.edj
