@@ -18,7 +18,7 @@ all: $(OBJS)
 	$(EDJE_CC) $(EDJE_CC_FLAGS) $< $@
 
 clean:
-	rm themes/*.edj
+	rm $(SOURCE_DIR)/*.edj
 
 install: $(OBJS)
 	mkdir -p "$(DESTDIR)/usr/share/terminology/themes"
