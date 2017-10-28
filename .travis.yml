@@ -1,10 +1,12 @@
 language: none
 sudo: required
 
-install:
-  - sudo add-apt-repository -y ppa:niko2040/e19
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libefl-bin
+addons:
+  apt:
+    sources:
+    - sourceline: 'ppa:niko2040/e19'
+    packages:
+    - libefl-bin
 
 script:
   - make
