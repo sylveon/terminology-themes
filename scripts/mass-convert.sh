@@ -14,9 +14,9 @@ IFS=$'\n'
 for file in `find -type f`
 do
 	cd ${SCRIPT_FOLDER}
-	./convert.py ${1}/${file} > ${2}/`basename ${file} .theme`.edc
+	OUTPUT_FILE=${2}/`basename ${file} .theme`.edc
+	./convert.py ${1}/${file} > ${OUTPUT_FILE}
+	[[ ${3} == "--remove-whitespaces" ]] && rename -f "s/\s+//g" ${OUTPUT_FILE}
 done
-
-[[ ${3} == "--remove-whitespaces" ]] && cd ${2} && rename -f "s/\s+//g" *
 
 echo "Done!"
