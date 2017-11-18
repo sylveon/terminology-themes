@@ -15,8 +15,8 @@ for file in $(find -type f)
 do
 	cd "${SCRIPT_FOLDER}" || exit 2
 	OUTPUT_FILE=${2}/$(basename "${file}" .theme).edc
+	[[ ${3} == "--remove-whitespaces" ]] && OUTPUT_FILE=${OUTPUT_FILE//[[:space:]]}
 	./convert.py "${1}/${file}" > "${OUTPUT_FILE}"
-	[[ ${3} == "--remove-whitespaces" ]] && rename -f "s/\s+//g" "${OUTPUT_FILE}"
 done
 
 echo "Done!"
