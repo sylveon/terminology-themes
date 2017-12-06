@@ -1,0 +1,64 @@
+/*
+ * Nord
+ *
+ * Copyright (c) 2017 Artic Ice Studio
+ * All rights reserved.
+ *
+ * MIT License
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this
+ * software and associated documentation files (the "Software"), to deal in the Software
+ * without restriction, including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons
+ * to whom the Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or
+ * substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+ * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+#define COL_DEF 216 222 233 255 // Foreground color
+
+#define ANSI0 59 66 82 255
+#define ANSI1 191 97 106 255
+#define ANSI2 163 190 140 255
+#define ANSI3 235 203 139 255
+#define ANSI4 129 161 193 255
+#define ANSI5 180 142 173 255
+#define ANSI6 136 192 208 255
+#define ANSI7 229 233 240 255
+
+#define ANSI8 76 86 106 255
+#define ANSI9 191 97 106 255
+#define ANSI10 163 190 140 255
+#define ANSI11 235 203 139 255
+#define ANSI12 129 161 193 255
+#define ANSI13 180 142 173 255
+#define ANSI14 143 188 187 255
+#define ANSI15 236 239 244 255
+
+#define BG_COLOR 46 52 64 255
+
+
+
+
+#define BELL ANSI1 // Color of the bell
+
+#define BELL_OVERLAY_COLOR 191 97 106 100 // Color flash when bell rings
+
+#define CURSOR 216 222 233 // Cursor color
+
+#define LINK ANSI4 // Color of the link underline
+
+#define MEDIA_BG BG_COLOR // Background color of the popmedia
+
+
+
+
+#include "../assets/base.edc"
