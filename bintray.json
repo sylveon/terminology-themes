@@ -12,7 +12,7 @@
 
     "files":
     [
-        {"includePattern": "themes\/(.+\.edj)", "uploadPattern": "$1"}
+        {"includePattern": "themes\/(.+\.edj)", "uploadPattern": "$1", "matrixParams": {"override": 1}}
     ],
     "publish": true
 }
