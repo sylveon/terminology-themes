@@ -22,6 +22,7 @@ First, you need to install the required components to build it:
 
 - `edje_cc`
   - Ubuntu: `libefl-bin` from the [niko2040/e19](https://launchpad.net/~niko2040/+archive/ubuntu/e19) PPA
+  - Fedora: `efl-devel`
   - Arch Linux: [efl](https://www.archlinux.org/packages/extra/x86_64/efl/)
   - Gentoo: [dev-libs/efl](https://packages.gentoo.org/packages/dev-libs/efl)
   - Other distros: IDK Google it
