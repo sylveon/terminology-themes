@@ -36,5 +36,5 @@ sudo make install
 
 ## Packages
 
-Arch Linux: [terminology-themes-git](https://aur.archlinux.org/packages/terminology-themes-git/) on the AUR
-Gentoo: [x11-themes/terminology-themes](https://packages.gentoo.org/packages/x11-themes/terminology-themes)
+ - Arch Linux: [terminology-themes-git](https://aur.archlinux.org/packages/terminology-themes-git/) on the AUR
+ - Gentoo: [x11-themes/terminology-themes](https://packages.gentoo.org/packages/x11-themes/terminology-themes)
