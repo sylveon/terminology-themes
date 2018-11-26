@@ -38,3 +38,4 @@ sudo make install
 
  - Arch Linux: [terminology-themes-git](https://aur.archlinux.org/packages/terminology-themes-git/) on the AUR
  - Gentoo: [x11-themes/terminology-themes](https://packages.gentoo.org/packages/x11-themes/terminology-themes)
+ - Bodhi Linux: Install `terminology-themes-pack`. Individual themes can be installed by installing `terminology-themes-ThemeName`.
