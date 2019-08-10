@@ -1290,7 +1290,6 @@ collections {
             target: "popmedia_clip";
             target: "popmedia_dismiss";
             target: "popmedia_shadow";
-            target: "popmedia_fill";
             target: "popmedia_overlay";
          }
          program { name: "popmedia_scale2";
@@ -1301,7 +1300,6 @@ collections {
             target: "popmedia_clip";
             target: "popmedia_dismiss";
             target: "popmedia_shadow";
-            target: "popmedia_fill";
             target: "popmedia_overlay";
          }
          program { name: "popmedia_edje2";
@@ -1312,7 +1310,6 @@ collections {
             target: "popmedia_clip";
             target: "popmedia_dismiss";
             target: "popmedia_shadow";
-            target: "popmedia_fill";
             target: "popmedia_overlay";
          }
          program { name: "popmedia_mov2";
@@ -1323,7 +1320,6 @@ collections {
             target: "popmedia_clip";
             target: "popmedia_dismiss";
             target: "popmedia_shadow";
-            target: "popmedia_fill";
             target: "popmedia_overlay";
          }
 
