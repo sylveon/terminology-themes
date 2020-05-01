@@ -4,7 +4,7 @@
 
 Color schemes for the best terminal emulator!
 
-Previews are available [on my website](https://charlesmilette.net/terminology-themes).
+Previews are available [on my website](https://sylveon.dev/terminology-themes).
 
 ------------------------
 
