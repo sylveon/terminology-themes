@@ -1,6 +1,7 @@
-language: none
-sudo: required
+language: generic
+os: linux
 dist: focal
+virt: lxd
 
 addons:
   apt:
