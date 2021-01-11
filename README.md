@@ -16,26 +16,27 @@ The tab appearance is a WIP. If anyone with better knowledge of EDC than me want
 
 ## Installation
 
-**Note**: A package might be available for your distro. Scroll down to the [packages section](#packages) to find it out.
+> **Note**: A package might be available for your distro. Scroll down to the [packages section](#packages) to find it out.
 
 First, you need to install the required components to build it:
 
 - `edje_cc`
-  - Ubuntu: `libefl-bin` from the [niko2040/e19](https://launchpad.net/~niko2040/+archive/ubuntu/e19) PPA
+  - Ubuntu: `libedje-bin`
   - Fedora: `efl-devel`
   - Arch Linux: [efl](https://www.archlinux.org/packages/extra/x86_64/efl/)
   - Gentoo: [dev-libs/efl](https://packages.gentoo.org/packages/dev-libs/efl)
-  - Other distros: IDK Google it
+  - Consult your preferred search engine for other distributions
 
 Then, building and installing is pretty straightforward:
 
 ```sh
 make
 sudo make install
+# or, for a per-user install
+make install PREFIX=~/.local
 ```
 
 ## Packages
 
  - Arch Linux: [terminology-themes-git](https://aur.archlinux.org/packages/terminology-themes-git/) on the AUR
- - Gentoo: [x11-themes/terminology-themes](https://packages.gentoo.org/packages/x11-themes/terminology-themes)
  - Bodhi Linux: Install `terminology-themes-pack`. Individual themes can be installed by installing `terminology-themes-ThemeName`.

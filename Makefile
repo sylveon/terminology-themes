@@ -13,6 +13,8 @@ EDJE_CC_IMG_FLAGS=-id $(ASSETS_DIR)
 EDJE_CC_SND_FLAGS=-sd $(ASSETS_DIR)
 EDJE_CC_FLAGS=$(EDJE_CC_IMG_FLAGS) $(EDJE_CC_SND_FLAGS)
 
+PREFIX=/usr
+
 .PHONY: all clean install
 
 
@@ -25,5 +27,5 @@ clean:
 	rm $(SOURCE_DIR)/*.$(OBJ_EXT)
 
 install: $(OBJS)
-	mkdir -p "$(DESTDIR)/usr/share/terminology/themes"
-	install -Dm644 $^ "$(DESTDIR)/usr/share/terminology/themes"
+	mkdir -p "$(DESTDIR)$(PREFIX)/share/terminology/themes"
+	install -Dm644 $^ "$(DESTDIR)$(PREFIX)/share/terminology/themes"
