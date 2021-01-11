@@ -1,12 +1,11 @@
 language: none
 sudo: required
+dist: focal
 
 addons:
   apt:
-    sources:
-    - sourceline: ppa:niko2040/e19
     packages:
-    - libefl-bin
+    - libedje-bin
 
 script:
   - make
