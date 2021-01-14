@@ -32,7 +32,7 @@ Then, building and installing is pretty straightforward:
 ```sh
 make
 sudo make install
-# it installs by default to /usr, to use another prefix
+# for a prefix other than /usr
 make install PREFIX=/usr/local
 # or, for a per-user install
 make install PREFIX=~/.local
