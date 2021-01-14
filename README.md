@@ -33,7 +33,7 @@ Then, building and installing is pretty straightforward:
 make
 sudo make install
 # for a prefix other than /usr
-make install PREFIX=/usr/local
+sudo make install PREFIX=/usr/local
 # or, for a per-user install
 make install PREFIX=~/.local
 ```
